@@ -1,6 +1,6 @@
 # Ottimizzatore di Ricette
 
-Questo programma ottimizza la composizione di ricette in base alla distribuzione di materiali, rispettando vincoli specifici.
+Questo programma ottimizza la composizione di ricette in base alla distribuzione di elementi, rispettando vincoli specifici.
 
 ## Struttura del Progetto
 
@@ -9,7 +9,7 @@ Il progetto è organizzato nei seguenti file:
 - `main.py`: File principale che coordina l'esecuzione del programma
 - `data_loader.py`: Classe per il caricamento e la preparazione dei dati
 - `recipe_optimizer.py`: Classe per l'ottimizzazione delle ricette
-- `material_adjuster.py`: Classe per l'aggiustamento dei materiali per rispettare i vincoli
+- `element_adjuster.py`: Classe per l'aggiustamento dei elementi per rispettare i vincoli
 - `requirements.txt`: Elenco delle dipendenze richieste
 
 ## Installazione
@@ -33,8 +33,8 @@ python main.py
 
 Il programma segue i seguenti passaggi:
 
-1. **Caricamento Dati**: Legge i dati dal file Excel, includendo produzioni, consumi, percentuali delle famiglie nelle ricette, e composizione dei materiali.
+1. **Caricamento Dati**: Legge i dati dal file Excel, includendo produzioni, consumi, percentuali delle famiglie nelle ricette, e composizione dei elementi.
 
 2. **Ottimizzazione**: Utilizza l'algoritmo SLSQP per minimizzare gli errori nella resa globale, rispettando i vincoli sui consumi totali.
 
-3. **Aggiustamento Materiali**: Modifica iterativamente le ricette per portare le percentuali dei materiali all'interno dei range accettabili.
+3. **Aggiustamento elementi**: Modifica iterativamente le ricette per portare le percentuali dei elementi all'interno dei range accettabili.
